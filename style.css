@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+#player-container {
+  display: flex;
+  
+  align-items: center;flex-direction: column;
+}
+
+#game-container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#word-display {
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+#letter-input {
+  padding: 8px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #929292;
+  font-size: 24px;
+  text-align: center;
+}
+
+#guess-button {
+  border: none;
+  border-radius: 50px;
+  background: #47f927;
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+#player-name {
+  padding: 8px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #929292;
+  text-align: center;
+}
+
+#start-game {
+  border: none;
+  border-radius: 50px;
+  background: #47f927;
+  padding: 8px;
+  color: #fff;
+}
