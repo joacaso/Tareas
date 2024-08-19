@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Instalación de Windows en Notebooks</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS personalizado -->
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1 class="text-primary">Guía de Instalación de Windows en Notebooks</h1>
+            <p class="lead">Este tutorial te guiará paso a paso para instalar Windows en tu notebook.</p>
+        </header>
+<link rel="stylesheet" href="https://i.pinimg.com/736x/d3/02/d7/d302d7664552bb4bdad844c335c3ad25.jpg">
+<img src="Windows-Logo.jpg" class="imagen1" alt="   ">
+<img src="flecha.png" class="imagen" alt="   ">
+<img src="laptop.png" class="imagen2" alt="">
+        <section>
+            <h2 class="mt-4">1. Preparación</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Especificaciones Mínimas de Hardware:</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Procesador: 1 GHz o más rápido</li>
+                        <li class="list-group-item">RAM: 1 GB (32 bits) o 2 GB (64 bits)</li>
+                        <li class="list-group-item">Espacio en disco: 16 GB (32 bits) o 20 GB (64 bits)</li>
+                        <li class="list-group-item">Tarjeta gráfica: DirectX 9 o superior con controlador WDDM 1.0</li>
+                        <li class="list-group-item">Pantalla: Resolución de 800x600 o superior</li>
+                    </ul>
+                    <h3 class="card-title mt-4">Materiales Necesarios:</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Teclado y mouse configurados (si es necesario)</li>
+                        <li class="list-group-item">Imagen ISO de Windows</li>
+                        <li class="list-group-item">Unidad USB con al menos 8GB de capacidad</li>
+                        <li class="list-group-item">Programa para crear USB booteable (por ejemplo, Rufus)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="mt-4">2. Creación de un USB Booteable</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Descargar e Instalar Rufus</h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Descarga e instala Rufus desde el <a href="https://rufus.ie/" target="_blank">enlace proporcionado</a>.</li>
+                        <li class="list-group-item">Abre Rufus.</li>
+                    </ol>
+                    <h3 class="card-title mt-4">Configuración de Rufus</h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Selecciona el Dispositivo: Asegúrate de que la unidad USB esté conectada y seleccionada en Rufus.</li>
+                        <li class="list-group-item">Selecciona la ISO: Haz clic en "Seleccionar" y elige la imagen ISO de Windows.</li>
+                        <li class="list-group-item">
+                            Esquema de Partición y Sistema de Archivos:
+                            <ul class="list-group">
+                                <li class="list-group-item">Esquema de partición: MBR o GPT según tu configuración BIOS/UEFI</li>
+                                <li class="list-group-item">Sistema de archivos: NTFS</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item">Haz clic en "Empezar" para crear el USB booteable.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="mt-4">3. Configuración del BIOS/UEFI</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Acceso al BIOS/UEFI</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Comúnmente, las teclas para acceder al BIOS/UEFI son F2, Del, Esc, o F10. Consulta el manual de tu notebook si no estás seguro.</li>
+                    </ul>
+                    <h3 class="card-title mt-4">Cambiar el Orden de Arranque</h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Navega al menú de "Boot" o "Arranque".</li>
+                        <li class="list-group-item">Configura la USB como la primera opción en el orden de arranque.</li>
+                        <li class="list-group-item">Guarda los cambios y sal del BIOS/UEFI.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="mt-4">4. Instalación de Windows</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Proceso de Arranque desde el USB</h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Conecta la USB booteable a la notebook.</li>
+                        <li class="list-group-item">Enciende la notebook y arranca desde el USB (debe arrancar automáticamente si configuraste el orden de arranque correctamente).</li>
+                    </ol>
+                    <h3 class="card-title mt-4">Pantalla de Carga e Instalación</h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Selecciona el idioma, formato de hora y teclado.</li>
+                        <li class="list-group-item">Introduce la clave de producto (si es necesario).</li>
+                        <li class="list-group-item">Elige el tipo de instalación (personalizada o actualización).</li>
+                    </ol>
+                    <h3 class="card-title mt-4">Selección y Partición del Disco Duro</h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Elige la unidad donde deseas instalar Windows.</li>
+                        <li class="list-group-item">Si es necesario, particiona el disco.</li>
+                    </ol>
+                    <h3 class="card-title mt-4">Proceso de Copiado y Configuración Inicial</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Windows copiará los archivos y se instalará en tu notebook. Este proceso puede tardar unos minutos.</li>
+                        <li class="list-group-item">Configura tu cuenta de usuario, opciones de privacidad, etc.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="mt-4">5. Post-Instalación y Configuración Adicional</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Buscar e Instalar Actualizaciones</h3>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Ve a Configuración > Actualización y seguridad > Windows Update.</li>
+                        <li class="list-group-item">Busca e instala todas las actualizaciones disponibles.</li>
+                    </ol>
+                    <h3 class="card-title mt-4">Instalación de Software Adicional</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Instala navegadores, suites de oficina, antivirus y cualquier otro software necesario.</li>
+                    </ul>
+                    <h3 class="card-title mt-4">Configuraciones Recomendadas</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Ajusta las configuraciones de rendimiento y elimina cualquier bloatware innecesario.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
